@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Test || Lucifier</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1 class="heading">Typing Test</h1>
+    <div class="screen">
+        <div class="screen-class">
+            <p id="para" class="para"></p>
+            <div id="result-screen">
+                <h4 class="resultHead">Typing Test Results</h4><br>
+                <ul id="results">
+                    <li>Gross Speed</li>
+                    <li>Accuracy</li>
+                </ul>
+                <ul id="results" class="resultItems">
+                    <li>: <span id="Gross">0</span> wpm</li>
+                    <li>: <span id="Accuracy">0</span>%</li>
+                </ul>
+            </div>
+        </div>
+        <div class="screen-lower">
+            <textarea id="input-text" onkeydown="keyspressed()"></textarea>
+            <i id="enter-msg" class="fa fa-play-circle-o enter-msg"> Type the above text here</i>
+        </div>
+        <div class="bar">
+            <h4 id="deadline">Time</h4>
+            <p class="time">00:00</p>
+            <label id="test">Test text : <br></label>
+            <select name="test-text" id="test-text" size="3">
+                <option id="option" value="1" selected='selected'>About paragraph</option>
+                <option id="option" value="2">About Steve Job</option>
+                <option id="option" value="3">About Elon Musk</option>
+            </select>
+            <label id="duration" >Duration : </label>
+            <select name="timer" id="timer">
+                <option id="timer-opt" value="1">2 minutes</option>
+                <option id="timer-opt" value="2">5 minutes</option>
+            </select>
+            <button id="restart" type="button"><i class="fa fa-refresh"></i> Restart</button>
+            <button type="button" id="timeset" class="start-btn start">START</button>
+            <button type="button" id="result" class="start-btn result">RESULT</button>
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
